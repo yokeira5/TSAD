@@ -10,10 +10,6 @@ from torchnet import meter
 from networks.ResUnet import ResUnet
 from torch.utils.data import DataLoader
 from utils.metrics import calculate_metrics
-from dataloaders.OPTIC_dataloader import OPTIC_dataset
-from dataloaders.convert_csv_to_list import convert_labeled_list
-from dataloaders.normalize import normalize_image, normalize_image_to_0_1
-from dataloaders.transform import collate_fn_wo_transform, collate_fn_w_transform
 from dataloader.dataset import ST
 from loss import FocalLoss, BinaryDiceLoss
 import cv2
